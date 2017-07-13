@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_search"
+        android:title="Test 1"
+        android:icon="@mipmap/ic_launcher" />
+    <item android:id="@+id/action_settings"
+        android:title="Test 2"
+        android:icon="@mipmap/ic_launcher" />
+    <item android:id="@+id/action_navigation"
+        android:title="Test 3"
+        android:icon="@mipmap/ic_launcher" />
+</menu>
