@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/action_search"
-        android:title="Test 1"
+    <item android:id="@+id/action_news"
+        android:title="News"
         android:icon="@mipmap/ic_launcher" />
-    <item android:id="@+id/action_settings"
-        android:title="Test 2"
+    <item android:id="@+id/action_exhibits"
+        android:title="Exhibits"
         android:icon="@mipmap/ic_launcher" />
-    <item android:id="@+id/action_navigation"
-        android:title="Test 3"
+    <item android:id="@+id/action_calendar"
+        android:title="Calendar"
+        android:icon="@mipmap/ic_launcher" />
+    <item android:id="@+id/action_map"
+        android:title="Map"
         android:icon="@mipmap/ic_launcher" />
 </menu>
