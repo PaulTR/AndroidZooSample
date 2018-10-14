@@ -6,7 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import com.ptrprograms.zoo.databinding.FragmentEventsBinding
+import com.ptrprograms.zoo.R
+import kotlinx.android.synthetic.main.fragment_events.view.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class EventsFragment : Fragment() {
@@ -16,16 +17,17 @@ class EventsFragment : Fragment() {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentEventsBinding.inflate(inflater, container, false)
+        val view = inflater.inflate(R.layout.fragment_events, container, false)
+
 
         val adapter = EventsAdapter()
-        binding.recyclerViewEvents.adapter = adapter
+        view.recycler_view_events.adapter = adapter
 
         eventsViewModel.getEvents().observe(viewLifecycleOwner, Observer { events ->
             if (events != null) adapter.submitList(events)
         })
 
 
-        return binding.root
+        return view.rootView
     }
 }

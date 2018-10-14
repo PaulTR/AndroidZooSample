@@ -9,7 +9,7 @@ import com.ptrprograms.zoo.models.Event
 
 @Dao
 interface EventsDao {
-    @Query("Select * FROM events ORDER BY id DESC")
+    @Query("SELECT * FROM events ORDER BY id DESC")
     fun getEvents(): LiveData<List<Event>>
 
     @Query("SELECT * FROM events WHERE id = :id")
