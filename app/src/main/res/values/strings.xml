@@ -13,4 +13,6 @@
     <string name="nav_drawer_header_content_description">Zoo Activities Logo</string>
     <string name="event_item_image_content_description">Event Image</string>
     <string name="event_detail_image_content_description">Event Detail Image</string>
+    <string name="animal_item_image_content_description">Animal Image</string>
+    <string name="animal_detail_image_content_description">Animal Detail Image</string>
 </resources>

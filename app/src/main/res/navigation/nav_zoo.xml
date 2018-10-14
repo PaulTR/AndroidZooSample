@@ -23,7 +23,17 @@
         android:id="@+id/fragment_animals"
         android:name="com.ptrprograms.zoo.animals.AnimalsFragment"
         android:label="Animals"
-        tools:layout="@layout/fragment_animals" />
+        tools:layout="@layout/fragment_animals">
+
+        <action
+            android:id="@+id/action_animals_fragment_to_animal_detail_fragment"
+            app:destination="@id/animal_detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
 
     <fragment
         android:id="@+id/fragment_map"
@@ -44,6 +54,16 @@
         tools:layout="@layout/fragment_event_details">
         <argument
             android:name="eventId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/animal_detail_fragment"
+        android:name="com.ptrprograms.zoo.animals.AnimalDetailFragment"
+        android:label="Animal Details"
+        tools:layout="@layout/fragment_animal_details">
+        <argument
+            android:name="animalId"
             app:argType="string" />
     </fragment>
 
