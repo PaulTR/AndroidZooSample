@@ -8,7 +8,7 @@ import androidx.room.Query
 import com.ptrprograms.zoo.models.Event
 
 @Dao
-interface EventDao {
+interface EventsDao {
     @Query("Select * FROM events ORDER BY id")
     fun getEvents(): LiveData<List<Event>>
 

@@ -11,5 +11,6 @@ data class Event(
         val date: String,
         val time: String,
         val title: String,
-        val description: String
+        val description: String,
+        val imageUrl: String
 )

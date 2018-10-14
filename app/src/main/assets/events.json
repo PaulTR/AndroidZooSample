@@ -1,0 +1,11 @@
+[
+  {
+    "eventId": "1",
+    "dayOfTheWeek": "Friday",
+    "date": "October 13th 2018",
+    "time": "6:00PM",
+    "title": "Misc event",
+    "description": "long description",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg"
+  }
+]

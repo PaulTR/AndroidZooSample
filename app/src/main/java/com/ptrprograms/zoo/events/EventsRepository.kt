@@ -1,16 +1,16 @@
 package com.ptrprograms.zoo.events
 
-class EventsRepository private constructor(private val eventDao: EventDao) {
+class EventsRepository private constructor(private val eventsDao: EventsDao) {
 
-    fun getEvents() = eventDao.getEvents()
+    fun getEvents() = eventsDao.getEvents()
 
-    fun getEvent(id: String) = eventDao.getEvent(id)
+    fun getEvent(id: String) = eventsDao.getEvent(id)
 
     companion object {
         @Volatile private var instance: EventsRepository? = null
 
-        fun getInstance(eventDao: EventDao) = instance ?: synchronized(this) {
-            instance ?: EventsRepository(eventDao).also { instance = it }
+        fun getInstance(eventsDao: EventsDao) = instance ?: synchronized(this) {
+            instance ?: EventsRepository(eventsDao).also { instance = it }
         }
     }
 }
