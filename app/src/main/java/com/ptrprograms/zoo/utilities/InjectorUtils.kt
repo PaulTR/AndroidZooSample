@@ -1,6 +1,7 @@
 package com.ptrprograms.zoo.utilities
 
 import android.content.Context
+import com.ptrprograms.zoo.events.EventDetailViewModel
 import com.ptrprograms.zoo.events.EventsRepository
 import com.ptrprograms.zoo.events.EventsViewModel
 
@@ -13,5 +14,10 @@ object InjectorUtils {
     fun provideEventsViewModelFactory(context: Context) : EventsViewModel.EventsViewModelFactory {
         val repository = getEventsRepository(context)
         return EventsViewModel.EventsViewModelFactory(repository)
+    }
+
+    fun provideEventDetailViewModelFactory(context: Context, id: String) : EventDetailViewModel.EventDetailViewModelFactory {
+        val repository = getEventsRepository(context)
+        return EventDetailViewModel.EventDetailViewModelFactory(repository, id)
     }
 }
