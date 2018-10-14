@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/fragment_events">
+
+    <fragment
+        android:id="@+id/fragment_events"
+        android:name="com.ptrprograms.zoo.EventsFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/fragment_animals"
+        android:name="com.ptrprograms.zoo.AnimalsFragment"
+        android:label="Animals"
+        tools:layout="@layout/fragment_animals" />
+
+</navigation>

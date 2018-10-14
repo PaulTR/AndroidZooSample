@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_events"
+        android:title="@string/nav_item_events" />
+    <item
+        android:id="@+id/fragment_animals"
+        android:title="@string/nav_item_exhibits" />
+    <item
+        android:id="@+id/fragment_map"
+        android:title="@string/nav_item_map" />
+    <item
+        android:id="@+id/fragment_gallery"
+        android:title="@string/nav_item_gallery" />
+    <item
+        android:id="@+id/fragment_schedule"
+        android:title="@string/nav_schedule" />
+
+</menu>

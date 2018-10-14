@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Zoo</string>
+    <string name="app_name">Denver Zoo</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_drawer_header_title">Denver Zoo</string>
+    <string name="nav_item_events">Events</string>
+    <string name="nav_item_exhibits">Animals</string>
+    <string name="nav_item_map">Map</string>
+    <string name="nav_item_gallery">Gallery</string>
+    <string name="nav_schedule">Schedule</string>
+
+    <!-- Accessibility -->
+    <string name="nav_drawer_header_content_description">Zoo Activities Logo</string>
 </resources>
