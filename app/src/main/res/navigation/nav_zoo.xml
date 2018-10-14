@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/fragment_events"
-        android:name="com.ptrprograms.zoo.EventsFragment"
+        android:name="com.ptrprograms.zoo.events.EventsFragment"
         android:label="Events"
         tools:layout="@layout/fragment_events" />
 
     <fragment
         android:id="@+id/fragment_animals"
-        android:name="com.ptrprograms.zoo.AnimalsFragment"
+        android:name="com.ptrprograms.zoo.animals.AnimalsFragment"
         android:label="Animals"
         tools:layout="@layout/fragment_animals" />
 
     <fragment
         android:id="@+id/fragment_map"
-        android:name="com.ptrprograms.zoo.MapFragment"
+        android:name="com.ptrprograms.zoo.map.MapFragment"
         android:label="Map"
         tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/fragment_gallery"
-        android:name="com.ptrprograms.zoo.GalleryFragment"
+        android:name="com.ptrprograms.zoo.gallery.GalleryFragment"
         android:label="Gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/fragment_schedule"
-        android:name="com.ptrprograms.zoo.ScheduleFragment"
+        android:name="com.ptrprograms.zoo.schedule.ScheduleFragment"
         android:label="Schedule"
         tools:layout="@layout/fragment_map" />
 

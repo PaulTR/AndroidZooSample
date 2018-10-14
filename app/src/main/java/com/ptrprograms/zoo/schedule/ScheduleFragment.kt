@@ -1,4 +1,4 @@
-package com.ptrprograms.zoo
+package com.ptrprograms.zoo.schedule
 
 import androidx.fragment.app.Fragment
 

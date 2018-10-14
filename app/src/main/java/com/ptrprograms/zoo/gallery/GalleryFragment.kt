@@ -1,4 +1,4 @@
-package com.ptrprograms.zoo
+package com.ptrprograms.zoo.gallery
 
 import androidx.fragment.app.Fragment
 

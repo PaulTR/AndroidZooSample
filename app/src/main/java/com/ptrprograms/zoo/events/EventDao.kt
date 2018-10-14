@@ -1,0 +1,20 @@
+package com.ptrprograms.zoo.events
+
+import androidx.lifecycle.LiveData
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import com.ptrprograms.zoo.models.Event
+
+@Dao
+interface EventDao {
+    @Query("Select * FROM events ORDER BY id")
+    fun getEvents(): LiveData<List<Event>>
+
+    @Query("SELECT * FROM events WHERE id = :id")
+    fun getEvent(id: String): LiveData<Event>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertAll(plants: List<Event>)
+}
