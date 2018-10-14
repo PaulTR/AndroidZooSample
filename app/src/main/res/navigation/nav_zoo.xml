@@ -17,4 +17,22 @@
         android:label="Animals"
         tools:layout="@layout/fragment_animals" />
 
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="com.ptrprograms.zoo.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/fragment_gallery"
+        android:name="com.ptrprograms.zoo.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/fragment_schedule"
+        android:name="com.ptrprograms.zoo.ScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/fragment_map" />
+
 </navigation>

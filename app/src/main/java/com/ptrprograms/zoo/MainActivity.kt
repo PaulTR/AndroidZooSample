@@ -10,6 +10,10 @@ import androidx.navigation.ui.setupWithNavController
 import kotlinx.android.synthetic.main.activity_main.*
 
 
+/*
+TODO Next alpha for nav components will allow multiple top layer fragments, so add support for that
+https://android-review.googlesource.com/c/platform/frameworks/support/+/780044
+*/
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

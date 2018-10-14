@@ -3,7 +3,7 @@ buildscript {
     ext {
         // Sdk and tools
         compileSdkVersion = 28
-        minSdkVersion = 19
+        minSdkVersion = 21
         targetSdkVersion = 28
 
         // App dependencies
@@ -24,6 +24,7 @@ buildscript {
         supportLibraryVersion = '1.0.0'
         uiAutomatorVersion = '2.2.0-alpha4'
         workVersion = '1.0.0-alpha09'
+        koinViewModelVersion = '1.0.1'
     }
 
     repositories {
@@ -33,7 +34,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:$gradleVersion"
+        classpath "com.android.tools.build:gradle:3.2.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
     }
