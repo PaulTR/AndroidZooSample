@@ -1,11 +1,10 @@
 # AndroidZooSample
 Test project for trying a few architecture things I've been wanting to work with
 
-* MVVM
-* RxJava
-* Maybe Cupboard
+* JetPack recommendations
+* Android X
 * Testing
-* Dependency injection, maybe dagger2
+* Navigation component
 * Firebase
-* Dependency inversion
-* Databinding
+* Repository pattern
+* Kotlin Binding
