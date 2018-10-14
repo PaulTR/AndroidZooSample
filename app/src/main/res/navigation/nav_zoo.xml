@@ -9,7 +9,11 @@
         android:id="@+id/fragment_events"
         android:name="com.ptrprograms.zoo.events.EventsFragment"
         android:label="Events"
-        tools:layout="@layout/fragment_events" />
+        tools:layout="@layout/fragment_events">
+        <action
+            android:id="@+id/action_events_fragment_to_event_detail_fragment"
+            app:destination="@id/event_detail_fragment"/>
+    </fragment>
 
     <fragment
         android:id="@+id/fragment_animals"
@@ -30,9 +34,14 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/fragment_schedule"
-        android:name="com.ptrprograms.zoo.schedule.ScheduleFragment"
-        android:label="Schedule"
-        tools:layout="@layout/fragment_map" />
+        android:id="@+id/event_detail_fragment"
+        android:name="com.ptrprograms.zoo.events.EventDetailFragment"
+        android:label="EventDetails"
+        tools:layout="@layout/fragment_event_details">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+    </fragment>
+
 
 </navigation>

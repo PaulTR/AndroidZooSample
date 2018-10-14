@@ -11,4 +11,5 @@
 
     <!-- Accessibility -->
     <string name="nav_drawer_header_content_description">Zoo Activities Logo</string>
+    <string name="event_item_image_content_description">Event Image</string>
 </resources>

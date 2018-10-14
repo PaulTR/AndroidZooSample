@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.ptrprograms.zoo.R
+import com.ptrprograms.zoo.databinding.FragmentEventsBinding
 import com.ptrprograms.zoo.utilities.InjectorUtils
+import kotlinx.android.synthetic.main.fragment_events.*
 import kotlinx.android.synthetic.main.fragment_events.view.*
 
 class EventsFragment : Fragment() {
@@ -18,17 +20,21 @@ class EventsFragment : Fragment() {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_events, container, false)
+        val binding = FragmentEventsBinding.inflate(inflater, container, false)
 
-        val context = context ?: return view.rootView
+        val context = context ?: return binding.root
         val factory = InjectorUtils.provideEventsViewModelFactory(context)
+
         viewModel = ViewModelProviders.of(this, factory).get(EventsViewModel::class.java)
 
+        val adapter = EventsAdapter()
+        binding.recyclerViewEvents.adapter = adapter
+
         viewModel.getEvents().observe(viewLifecycleOwner, Observer { events ->
-            if (events != null) view.events_text.text = events.get(0).title
+            if (events != null) adapter.submitList(events)
         })
 
 
-        return view.rootView
+        return binding.root
     }
 }
