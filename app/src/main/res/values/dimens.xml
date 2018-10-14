@@ -6,4 +6,5 @@
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="list_item_image_height">100dp</dimen>
+    <dimen name="event_detail_image_height">192dp</dimen>
 </resources>

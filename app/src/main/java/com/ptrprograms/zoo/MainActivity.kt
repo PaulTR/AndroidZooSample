@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 /*
 TODO Next alpha for nav components will allow multiple top layer fragments, so add support for that
 https://android-review.googlesource.com/c/platform/frameworks/support/+/780044
+
+TODO Handle database updates
 */
 class MainActivity : AppCompatActivity() {
 

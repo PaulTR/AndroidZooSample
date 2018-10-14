@@ -9,12 +9,12 @@ import com.ptrprograms.zoo.models.Event
 
 @Dao
 interface EventsDao {
-    @Query("Select * FROM events ORDER BY id")
+    @Query("Select * FROM events ORDER BY id DESC")
     fun getEvents(): LiveData<List<Event>>
 
     @Query("SELECT * FROM events WHERE id = :id")
     fun getEvent(id: String): LiveData<Event>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(plants: List<Event>)
+    fun insertAll(events: List<Event>)
 }

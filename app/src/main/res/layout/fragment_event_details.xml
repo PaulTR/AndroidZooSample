@@ -36,7 +36,7 @@
                     android:id="@+id/detail_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="Content Description"
+                    android:contentDescription="@string/event_detail_image_content_description"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
                     app:imageFromUrl="@{viewModel.event.imageUrl}"
@@ -45,7 +45,7 @@
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/detail_toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
+                    android:layout_height="@dimen/event_detail_image_height"
                     app:layout_collapseMode="pin"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -54,7 +54,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.core.widget.NestedScrollView
-            android:id="@+id/plant_detail_scrollview"
+            android:id="@+id/event_detail_scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -64,7 +64,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/plant_detail"
+                    android:id="@+id/event_description"
                     style="?android:attr/textAppearanceLarge"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                     android:textIsSelectable="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:text="Details about the plant" />
+                    tools:text="Details about the event" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

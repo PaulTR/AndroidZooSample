@@ -13,8 +13,4 @@
     <item
         android:id="@+id/fragment_gallery"
         android:title="@string/nav_item_gallery" />
-    <item
-        android:id="@+id/fragment_schedule"
-        android:title="@string/nav_schedule" />
-
 </menu>

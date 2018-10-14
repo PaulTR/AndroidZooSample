@@ -12,15 +12,4 @@ class EventDetailViewModel(eventsRepository: EventsRepository,
     init {
         event = eventsRepository.getEvent(eventId)
     }
-
-    class EventDetailViewModelFactory(
-            private val eventsRepository: EventsRepository,
-            private val eventId: String
-    ) : ViewModelProvider.NewInstanceFactory() {
-
-        @Suppress("UNCHECKED_CAST")
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return EventDetailViewModel(eventsRepository, eventId) as T
-        }
-    }
 }

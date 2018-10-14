@@ -52,7 +52,9 @@ dependencies {
     //Third party
 
     //TODO Implement Koin for viewmodel injection
-    implementation "org.koin:koin-androidx-viewmodel:$rootProject.koinViewModelVersion"
+    implementation "org.koin:koin-androidx-viewmodel:$rootProject.koinVersion"
+    implementation "org.koin:koin-androidx-scope:$rootProject.koinVersion"
+
 
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"

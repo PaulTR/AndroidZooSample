@@ -1,16 +1,9 @@
 package com.ptrprograms.zoo.events
 
-class EventsRepository private constructor(private val eventsDao: EventsDao) {
+import androidx.lifecycle.LiveData
+import com.ptrprograms.zoo.models.Event
 
-    fun getEvents() = eventsDao.getEvents()
-
-    fun getEvent(id: String) = eventsDao.getEvent(id)
-
-    companion object {
-        @Volatile private var instance: EventsRepository? = null
-
-        fun getInstance(eventsDao: EventsDao) = instance ?: synchronized(this) {
-            instance ?: EventsRepository(eventsDao).also { instance = it }
-        }
-    }
+interface EventsRepository {
+    fun getEvents(): LiveData<List<Event>>
+    fun getEvent(id: String): LiveData<Event>
 }
