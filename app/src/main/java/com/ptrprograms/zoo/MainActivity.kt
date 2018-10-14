@@ -8,6 +8,9 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import kotlinx.android.synthetic.main.activity_main.*
+import com.google.firebase.analytics.FirebaseAnalytics
+
+
 
 
 /*
@@ -18,8 +21,12 @@ TODO Handle database updates
 */
 class MainActivity : AppCompatActivity() {
 
+    lateinit var mFirebaseAnalytics: FirebaseAnalytics
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
 
         setContentView(R.layout.activity_main)
 

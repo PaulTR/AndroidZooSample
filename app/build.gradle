@@ -48,6 +48,7 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.supportLibraryVersion"
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlinVersion"
+    implementation "com.google.firebase:firebase-core:$rootProject.firebaseVersion"
 
     //Third party
 
@@ -64,3 +65,5 @@ dependencies {
     androidTestImplementation "androidx.test.uiautomator:uiautomator:$rootProject.uiAutomatorVersion"
     testImplementation "junit:junit:$rootProject.junitVersion"
 }
+
+apply plugin: 'com.google.gms.google-services'

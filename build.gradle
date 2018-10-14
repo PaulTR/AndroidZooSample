@@ -25,6 +25,7 @@ buildscript {
         uiAutomatorVersion = '2.2.0-alpha4'
         workVersion = '1.0.0-alpha09'
         koinVersion = '1.0.1'
+        firebaseVersion = '16.0.4'
     }
 
     repositories {
@@ -37,6 +38,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:3.2.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+        classpath 'com.google.gms:google-services:4.0.1'
     }
 }
 
