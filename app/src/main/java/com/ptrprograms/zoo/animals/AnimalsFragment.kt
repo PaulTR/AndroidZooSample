@@ -28,6 +28,7 @@ class AnimalsFragment : Fragment() {
         animalsViewModel.getAnimals().observe(viewLifecycleOwner, Observer { animals ->
             if (animals != null) adapter.submitList(animals)
         })
+
         return view.rootView
     }
 
