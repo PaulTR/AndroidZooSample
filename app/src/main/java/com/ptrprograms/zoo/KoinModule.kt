@@ -13,6 +13,8 @@ import com.ptrprograms.zoo.events.EventDetailViewModel
 import com.ptrprograms.zoo.events.EventsRepository
 import com.ptrprograms.zoo.events.EventsRepositoryImpl
 import com.ptrprograms.zoo.events.EventsViewModel
+import com.ptrprograms.zoo.favorites.FavoritesRepository
+import com.ptrprograms.zoo.favorites.FavoritesRepositoryImpl
 import com.ptrprograms.zoo.utilities.AppDatabase
 import com.ptrprograms.zoo.utilities.DATABASE_NAME
 import com.ptrprograms.zoo.utilities.SeedAnimalsDatabaseWorker
@@ -52,9 +54,15 @@ val koinModule = module {
         get<AppDatabase>().animalsDao()
     }
 
+    single {
+        get<AppDatabase>().favoritesDao()
+    }
+
     single { EventsRepositoryImpl(get()) as EventsRepository }
 
     single { AnimalsRepositoryImpl(get()) as AnimalsRepository }
+
+    single { FavoritesRepositoryImpl(get()) as FavoritesRepository }
 
     viewModel {
         EventsViewModel(get())
