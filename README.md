@@ -5,10 +5,12 @@ This is a sandbox project for me to try various Android libraries, architectures
 * Android X
 * Testing
 * Navigation component
-* Firebase
 * Repository pattern
 * Kotlin Binding
-* Koin or some other DI
+* Koin
+
+Coming soon:
+* Firebase
 * TensorFlow ML Kit
 * QR Codes
 * Video
